@@ -24,6 +24,16 @@ OR
 npm install --global git-gbr
 ```
 
+#### Maybe
+
+If you're using zsh or any other kind of shell that already aliased "gbr" to
+some other command, you may need to override this in your `~/.zshrc` /
+`~/.bashrc` or similar file.
+
+```bash
+alias gbr='/usr/local/bin/gbr'
+```
+
 ### Run
 
 Now in any git repository, run
