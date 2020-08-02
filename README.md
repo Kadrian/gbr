@@ -10,30 +10,18 @@ Switch git branch interactively using arrow keys
 
 ### Requirements
 
-You need to have `node` installed. This tutorial uses `yarn` as a package manager, you can also use `npm` instead.
+You need to have `node` installed.
 
 ### Install
 
 ```bash
-cd ~
-git clone git@github.com:Kadrian/gbr.git
-cd gbr
-yarn
-yarn build
+yarn global add git-gbr
 ```
 
-That creates a `/dist/main.js` file.
-
-Now create an alias in your `~/.bashrc` / `~/.zshrc` file or similar, add this line
+OR
 
 ```bash
-alias gbr="node ~/gbr/dist/main.js"
-```
-
-Source your file again, for example
-
-```bash
-source ~/.zshrc
+npm install --global git-gbr
 ```
 
 ### Run
