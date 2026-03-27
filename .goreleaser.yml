@@ -38,5 +38,6 @@ aurs:
     maintainers:
       - Kai Rollmann
     git_url: ssh://aur@aur.archlinux.org/gbr-bin.git
+    git_ssh_command: ssh -i {{ .KeyPath }} -o StrictHostKeyChecking=accept-new
     package: |
       install -Dm755 gbr "${pkgdir}/usr/bin/gbr"
