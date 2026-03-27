@@ -34,7 +34,7 @@ aurs:
     homepage: https://github.com/Kadrian/gbr
     description: Switch git branch interactively using arrow keys
     license: MIT
-    private_key: "{{ .Env.AUR_SSH_KEY }}"
+    private_key: ~/.ssh/aur
     maintainers:
       - Kai Rollmann
     git_url: ssh://aur@aur.archlinux.org/gbr-bin.git

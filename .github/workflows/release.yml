@@ -20,6 +20,13 @@ jobs:
         with:
           go-version-file: go.mod
 
+      - name: Setup AUR SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.AUR_SSH_KEY }}" > ~/.ssh/aur
+          chmod 600 ~/.ssh/aur
+          ssh-keyscan -t ed25519 aur.archlinux.org >> ~/.ssh/known_hosts 2>/dev/null
+
       - uses: goreleaser/goreleaser-action@v6
         with:
           version: latest
