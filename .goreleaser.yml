@@ -24,6 +24,7 @@ homebrew_casks:
   - repository:
       owner: Kadrian
       name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TAP_TOKEN }}"
     homepage: https://github.com/Kadrian/gbr
     description: Switch git branch interactively using arrow keys
     license: MIT
@@ -33,6 +34,7 @@ aurs:
     homepage: https://github.com/Kadrian/gbr
     description: Switch git branch interactively using arrow keys
     license: MIT
+    private_key: "{{ .Env.AUR_SSH_KEY }}"
     maintainers:
       - Kai Rollmann
     git_url: ssh://aur@aur.archlinux.org/gbr-bin.git
