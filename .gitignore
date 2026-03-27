@@ -1,7 +1,5 @@
-node_modules
-dist
+gbr
+dist/
 *.log
 .DS_Store
-.cache
 /.vscode
-/coverage
